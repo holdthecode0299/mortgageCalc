@@ -27,15 +27,15 @@ function yearstoMonths(year) {
 }
 
 function postPayments(payment) {
-    const total = document.getElementById("outMonthly");
+    const total = document.getElementById("monthlyPayment");
 
     total.innerText = "$" + payment;
 }
 
-const btn = document.getElementById("btnCalculate");
+const btn = document.getElementById("calculate");
 btn.onclick = function() {
     event.preventDefault()
-    const cost = document.getElementById("inCost").value;
+    const cost = document.getElementById("cost").value;
 
     if (cost == "") {
         alert ("Enter property cost")
@@ -45,9 +45,9 @@ btn.onclick = function() {
         return false;
     }
 
-    const downPayment = document.getElementById("inDown").value;
-    const interest = document.getElementById("inAPR").value;
-    const term = document.getElementById("inPeriod").value;
+    const downPayment = document.getElementById("downPayment").value;
+    const interest = document.getElementById("apr").value;
+    const term = document.getElementById("paymentPeriod").value;
 
     const amountBorrowed = cost - downPayment; 
     const monthlyPayments = calculateMortgage(amountBorrowed, interest, term);
