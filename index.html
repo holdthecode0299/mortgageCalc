@@ -1,39 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Hello, world!</title>
+</head>
 
-    <h1>Mortgage Calculator</h1>
-    <form>
-      <br>
-      <p><b>Purchase Amount</b>: <input type="text" id="cost"></p>
-      <p><b>Down Payment</b>: <input type="text" id="downPayment"></p>
-      <p><b>Interest Rate (APR%)</b>: <input type="text" id="apr"></p>
-      <p><b>Payment Period</b>: <input type="text" id="paymentPeriod"></p>
-      <p><button id="calculate" class="btn btn-secondary">Calculate Payment</button></p>
-      <div class ="col-sm-6" 
-      style="max-width: 20rem; height:5rem;" >
-      <br>
-      <p>Total Monthly Payment: <span id="monthlyPayment"></span></p>
-</div>
-    </form>
+<body>
 
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     <script src="calculator.js"></script>
+  <nav class="navbar" style="background-color: #80bd86;">
+    <a class="navbar-brand">Calculate Mortgage
+      <img src="../mortgageCalc/assets/9885980091537355429-64.png" width="45" height="45" class="d-inline-block align-top" alt="">
+    </a>
+  </nav>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Mortgage Calculator</h2>
+        <p class="card-text">Calculate estimated monthly payments.</p>
+        <p><b>Purchase Amount</b>: <input type="text" id="cost"></p>
+        <p><b>Down Payment</b>: <input type="text" id="downPayment"></p>
+        <p><b>Interest Rate (APR%)</b>: <input type="text" id="apr"></p>
+        <p><b>Payment Period</b>: <input type="text" id="paymentPeriod"></p>
+        <p><button id="calculate" class="btn btn-secondary">Calculate Payment</button></p>
+        <div class="col-sm-6" style="max-width: 20rem; height:5rem;">
+          <br>
+          <p>Total Monthly Payment: <span id="monthlyPayment"></span></p>
+        </div>
+    </div>
+  </div>    
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+        <script src="calculator.js"></script>
 </body>
 
 </html>
