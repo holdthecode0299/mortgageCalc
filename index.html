@@ -26,11 +26,23 @@
       <div class="card-body">
         <h2 class="card-title">Mortgage Calculator</h2>
         <p class="card-text">Calculate estimated monthly payments.</p>
-        <p><b>Purchase Amount</b>: <input type="text" id="cost"></p>
+        <p><b>Purchase Amount</b>: <input type="text" id="cost" min="1" max="100000000"></p>
         <p><b>Down Payment</b>: <input type="text" id="downPayment"></p>
-        <p><b>Interest Rate (APR%)</b>: <input type="text" id="apr"></p>
-        <p><b>Payment Period</b>: <input type="text" id="paymentPeriod"></p>
-        <p><button id="calculate" class="btn btn-secondary">Calculate Payment</button></p>
+        <p><b>Interest Rate (APR%)</b>: <input type="text" id="apr"></p>    
+    
+<form action="/action_page.php">
+  <p><b>Payment Period</b>: </p>
+            <select id="years">
+              <option value="none">-- Select Payment Term--</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+            </select>
+            <br><br>
+          </form>
+          
+      <p><button id="calculate" class="btn btn-secondary">Calculate Payment</button></p>
         <div class="col-sm-6" style="max-width: 20rem; height:5rem;">
           <br>
           <p>Total Monthly Payment: <span id="monthlyPayment"></span></p>
@@ -38,6 +50,35 @@
     </div>
   </div>    
 
+  <div class="card bg-warning">
+    <div class="card-body text-center">
+      <p class="card-text">Average rate for a 30-year fixed rate mortgage is currently 3.99%
+        <br> Average U.S. Mortgage Rates for January 9, 2020. 
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Learn more about choosing the best Mortgage for you.</h5>
+          <p class="card-text">Get the tools to make your mortgage fit your lifestyle.</p>
+          <a href="https://www.nerdwallet.com/blog/mortgages/how-to-choose-the-best-mortgage/" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Learn about Mortgage Preapproval.</h5>
+          <p class="card-text">Find out what lenders need from you.</p>
+          <a href="https://www.credit.com/loans/mortgage-questions/how-to-get-pre-approved-for-mortgage-home-loan/" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
